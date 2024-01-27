@@ -1,0 +1,37 @@
+.nav-background-color{
+    background: linear-gradient(90deg, #3FBEFF 0%, #04CCA8 100%);
+}
+
+input::placeholder {
+ font-size: 15px;
+ position: absolute;
+left: 12px;
+  }
+  .Nav-input-box{
+    width: 400px;
+  }
+
+
+  /* media quary */
+
+  @media only screen and (max-width: 768px) {
+    .Nav-input-box {
+      width: 300px; 
+    }
+  }
+  
+.all-devices{
+  flex-wrap: wrap;
+}
+
+.galaxy{
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.bg-second{
+ 
+background: var(--Primary-Blue, #ecf8fe);
+}
