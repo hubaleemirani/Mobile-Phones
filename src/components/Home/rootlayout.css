@@ -35,3 +35,6 @@ line-height: normal;
  
 background: var(--Primary-Blue, #ecf8fe);
 }
+.all{
+  color: red;
+}

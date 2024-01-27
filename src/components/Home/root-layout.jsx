@@ -10,63 +10,60 @@ import mobileone from "../../assects/mobileone.svg";
 import mobiletwo from "../../assects/mobiletwo.svg";
 import mobilethree from "../../assects/mobilethree.svg";
 import mobilefour from "../../assects/mobilefour.svg";
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+
+import { Autoplay,  } from "swiper/modules";
+
 const Rootlayout = () => {
-
-
   const Mapdata = [
     // ====================================== 1 ===========================================
     {
-      id:1,
+      id: 1,
       I: mobileone,
-      J: "Rs. 641",
-      L: "PANADOL 500MG TABLET 200S",
-      Lp: "GSK CONSUMER HEALTHCARE",
+      J: "Lorem Ipsum Dolor",
+      L: "123,456 PKR",
+
+      Lp: "Lorem Ipsum Dolo",
       dsr: "gsk",
       style: "mirani-1",
       tyle: "all",
-      button: "Sold"
     },
     {
-      id:2,
+      id: 2,
       I: mobiletwo,
-      J: "Rs. 398",
-      L: "PANADOL EXTRA TABLET 100S",
-      Lp: "GSK CONSUMER HEALTHCARE",
+      J: "Lorem Ipsum Dolor",
+      L: "123,456 PKR",
+      Lp: "Lorem Ipsum Dolo",
       dsr: "gsk",
       style: "mirani-2",
       tyle: "all",
-      button: "Sold"
     },
     {
-      id:3,
+      id: 3,
       I: mobilethree,
-      J: "Rs. 398",
-      L: "PANADOL EXTRA TABLET 100S",
-      Lp: "GSK CONSUMER HEALTHCARE",
+      J: "Lorem Ipsum Dolor",
+      L: "123,456 PKR",
+      Lp: "Lorem Ipsum Dolo",
       dsr: "gsk",
       style: "mirani-3",
       tyle: "all",
-      button: "Sold"
     },
     {
-      id:4,
+      id: 4,
       I: mobilefour,
-      J: "Rs. 398",
-      L: "PANADOL EXTRA TABLET 100S",
-      Lp: "GSK CONSUMER HEALTHCARE",
+      J: "Lorem Ipsum Dolor",
+      L: "123,456 PKR",
+      Lp: "Lorem Ipsum Dolo",
       dsr: "gsk",
       style: "mirani-3",
       tyle: "all",
-      button: "Sold"
     },
-  
   ];
-
-
 
   return (
     <div>
@@ -255,93 +252,175 @@ const Rootlayout = () => {
       {/* First Secton  */}
 
       <div className="bg-second py-5">
-  {/* <div className="container">
-    <div className="row">
-     
-      <div className="col-md-3">
-        
-        <div className="card mt-4 shadow p-3 mb-5 bg-body-tertiary rounded">
-        
-          <img src={mobileone}  className="card-img-top img-fluid" alt="" />
-          <div className="card-body">
-            <h5 className="card-title mt-2">Lorem Ipsum Dolor</h5>
-            <p className="text-danger">123,456 PKR</p>
-            <p>
-              <del>375,000</del>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="col-md-3">
-        <div className="card mt-4 shadow p-3 mb-5 bg-body-tertiary rounded">
-          <img src={mobiletwo} className="card-img-top img-fluid" alt="" />
-          <div className="card-body">
-            <h5 className="card-title mt-2">Lorem Ipsum Dolor</h5>
-            <p className="text-danger">123,456 PKR</p>
-            <p>
-              <del>375,000</del>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="col-md-3">
-        <div className="card mt-4 shadow p-3 mb-5 bg-body-tertiary rounded">
-          <img src={mobilethree} className="card-img-top img-fluid" alt="" />
-          <div className="card-body">
-            <h5 className="card-title mt-2">Lorem Ipsum Dolor</h5>
-            <p className="text-danger">123,456 PKR</p>
-            <p>
-              <del>375,000</del>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="col-md-3">
-        <div className="card mt-4 shadow p-3 mb-5 bg-body-tertiary rounded">
-          <img src={mobilefour} className="card-img-top img-fluid" alt="" />
-          <div className="card-body">
-            <h5 className="card-title mt-2">Lorem Ipsum Dolor</h5>
-            <p className="text-danger">123,456 PKR</p>
-            <p>
-              <del>375,000</del>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> */}
-<div className="position-absolute start-0 ms-5 "> <span className="ms-5 ps-3 fw-bold fs-5">BEST SELLING PHONES</span> </div>
 
-<div className=" mt-5 container">
+        <div className="position-absolute start-0 ms-5 ">
+          {" "}
+          <span className="ms-5 ps-3 fw-bold fs-5">
+            BEST SELLING PHONES
+          </span>{" "}
+        </div>
+
+        <div className=" mt-5 container">
           <div className="row">
             {Mapdata.map((itm) => (
               <div className="col-lg-3 col-md-3 col-sm-6 p-2 ">
-                  <div className="card ">
-                  <img
-                            className="img-fluid p-2 mt-1"
-                            width={400}
-                            src={itm.I}
-                            alt=""
-                          />
-                    <div className="card-body">
-                
-
-                      <span className={itm.style}>{itm.J} </span>
-                      <h6 className="mt-3">{itm.K}</h6>
-                      <p className={itm.tyle}>
-                        {itm.L} <span className={itm.dsr}>{itm.Lp}</span>
-                      </p>
-                     
-                    </div>
+                <div className="card shadow p-3">
+                  <div className="card-body">
+                    <Swiper
+                      spaceBetween={30}
+                      centeredSlides={true}
+                      autoplay={{
+                        delay: 2000,
+                        disableOnInteraction: false,
+                      }}
+                      pagination={{
+                        clickable: true,
+                      }}
+                      navigation={true}
+                      modules={[Autoplay]}
+                      className="mySwiper"
+                    >
+                      <SwiperSlide>
+                        {" "}
+                        <img
+                          className="img-fluid p-2"
+                          width={250}
+                          src={itm.I}
+                          alt=""
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <img
+                          className="img-fluid p-2"
+                          width={250}
+                          src={itm.I}
+                          alt=""
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <img
+                          className="img-fluid p-2"
+                          width={250}
+                          src={itm.I}
+                          alt=""
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <img
+                          className="img-fluid p-2"
+                          width={250}
+                          src={itm.I}
+                          alt=""
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <img
+                          className="img-fluid p-2"
+                          width={250}
+                          src={itm.I}
+                          alt=""
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <img
+                          className="img-fluid p-2"
+                          width={250}
+                          src={itm.I}
+                          alt=""
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <img
+                          className="img-fluid p-2"
+                          width={250}
+                          src={itm.I}
+                          alt=""
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <img
+                          className="img-fluid p-2"
+                          width={250}
+                          src={itm.I}
+                          alt=""
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <img
+                          className="img-fluid p-2"
+                          width={250}
+                          src={itm.I}
+                          alt=""
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <img
+                          className="img-fluid p-2"
+                          width={250}
+                          src={itm.I}
+                          alt=""
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <img
+                          className="img-fluid p-2"
+                          width={250}
+                          src={itm.I}
+                          alt=""
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <img
+                          className="img-fluid p-2"
+                          width={250}
+                          src={itm.I}
+                          alt=""
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <img
+                          className="img-fluid p-2"
+                          width={250}
+                          src={itm.I}
+                          alt=""
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <img
+                          className="img-fluid p-2"
+                          width={250}
+                          src={itm.I}
+                          alt=""
+                        />
+                      </SwiperSlide>
+                    </Swiper>
+                    <span className={itm.style}>{itm.J} </span>
+                    <h6 className="mt-1 ">{itm.K}</h6>
+                    <div className={itm.tyle}> {itm.L}</div>{" "}
+                    <del>
+                      {" "}
+                      <div className={itm.dsr}>{itm.Lp}</div>
+                    </del>
                   </div>
+                </div>
               </div>
             ))}
           </div>
         </div>
-
-  
-</div>
-
+      </div>
     </div>
   );
 };
