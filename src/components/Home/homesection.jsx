@@ -9,8 +9,12 @@ import mobilethirteen from "../../assects/mobilethirteen.svg";
 import mobilefourteen from "../../assects/mobilefourteen.svg";
 import mobilefifteen from "../../assects/mobilefifteen.svg";
 import mobilesixteen from "../../assects/mobilesixteen.svg";
+import mobileseventeen from "../../assects/mobileseventeen.svg";
+import smallgol from "../../assects/smallgol.svg";
 import dots from "../../assects/dots.svg";
 import rightarrow from "../../assects/rightarrow.svg";
+import largegol from "../../assects/largegol.svg";
+import verysmallgol from "../../assects/verysmallgol.svg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -312,23 +316,69 @@ const HomeSection = () => {
           <div className="col-md-10"></div>
           <div className="col-md-2 my-5 ">
             <div className="d-flex ">
+              <button className="border-0 nav-background-color rounded-1 px-3 py-2 text-white ">
+                1
+              </button>
 
-            <button className="border-0 nav-background-color rounded-1 px-3 py-2 text-white ">
-              1
-            </button>
-            
-            <div className="border-0 ms-3  mt-2">2</div>
-            <div className="border-0 ms-3  mt-2">3</div>
-            <div className="border-0 ms-3 mt-3">
-              <img width={10}  src={dots} alt="" />
-            </div>
-            <div className="border-0 ms-2 mt-1">
-              <img width={35} src={rightarrow} alt="" />
+              <div className="border-0 ms-3  mt-2">2</div>
+              <div className="border-0 ms-3  mt-2">3</div>
+              <div className="border-0 ms-3 mt-3">
+                <img width={10} src={dots} alt="" />
+              </div>
+              <div className="border-0 ms-2 mt-1">
+                <img width={35} src={rightarrow} alt="" />
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
+      <div className="position-absolute mt-5  ">
+        <img src={largegol} className="mt-5" width={160} alt="" />
+        <span className="position-absolute top-50 mt-5 pt-5 ">
+          <img src={verysmallgol} width={25} alt="" />
+        </span>
+      </div>
+      <br />
+      <br />
+
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4">
+            <div className="mt-5 position-relative">
+              <div className="position-absolute ms-5 ps-5">
+                <img className="ms-5 ps-3" src={smallgol} width={100} alt="" />
+              </div>
+
+              <h3 className=" buylater fw-bold ">
+                BUY NOW PAY<span className="later">LATER</span>{" "}
+              </h3>
+              <button className="ms-5 position-absolute start-50 border-0 text-white nav-background-color rounded-1 col-4">
+                View Details
+              </button>
             </div>
+          </div>
+          <div className="col-md-4"></div>
+          <br />
+          <br />
+          <div className="col-md-4">
+            <div className="ms-5">
+
+            <img
+              className="img-fluid"
+              width={200}
+              src={mobileseventeen}
+              alt=""
+            />
+            <p className="fs-5 mt-3">POCO X4 PRO - 128 GB 
+            <p className="ms-5 ps-5" ><span className="ms-4 later fw-bold">RS 47,999</span></p></p>
+
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

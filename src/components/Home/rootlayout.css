@@ -38,3 +38,19 @@ background: var(--Primary-Blue, #ecf8fe);
 .all{
   color: red;
 }
+
+
+.buylater{ 
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+
+}
+.later{
+  background: var(--Gradient-1, linear-gradient(90deg, #3FBEFF 0%, #04CCA8 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
