@@ -10,7 +10,6 @@ import mobileone from "../../assects/mobileone.svg";
 import mobiletwo from "../../assects/mobiletwo.svg";
 import mobilethree from "../../assects/mobilethree.svg";
 import mobilefour from "../../assects/mobilefour.svg";
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -18,6 +17,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 import { Autoplay,  } from "swiper/modules";
+import HomeSection from "./homesection";
 
 const Rootlayout = () => {
   const Mapdata = [
@@ -63,6 +63,8 @@ const Rootlayout = () => {
       style: "mirani-3",
       tyle: "all",
     },
+
+  
   ];
 
   return (
@@ -421,6 +423,11 @@ const Rootlayout = () => {
           </div>
         </div>
       </div>
+
+      <div>
+
+      </div>
+      <HomeSection/>
     </div>
   );
 };
