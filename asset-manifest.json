@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/Mobilephones/static/css/main.33ea5521.css",
+    "main.js": "/Mobilephones/static/js/main.b029ba8b.js",
+    "static/media/mobilefourteen.svg": "/Mobilephones/static/media/mobilefourteen.8eafd4f0c6bf85218e696b43c0210c66.svg",
+    "static/media/mobilefifteen.svg": "/Mobilephones/static/media/mobilefifteen.2df7ae74025a4e57b6713d18f6357e91.svg",
+    "static/media/mobiletwo.svg": "/Mobilephones/static/media/mobiletwo.84381a7e405e2e8f88f267c1c701d04b.svg",
+    "static/media/cardimgtwo.svg": "/Mobilephones/static/media/cardimgtwo.52e5594938478206c0f016a1a7788b7e.svg",
+    "static/media/mobileseven.svg": "/Mobilephones/static/media/mobileseven.521688ccfad8edb8a3920b8d74608368.svg",
+    "static/media/mobilefour.svg": "/Mobilephones/static/media/mobilefour.ea82bc11a129d17b23e0346056b4f02c.svg",
+    "static/media/cardimg.svg": "/Mobilephones/static/media/cardimg.6c0366e0af1c010ee3c45d7a8cb40472.svg",
+    "static/media/mobiletwolieve.svg": "/Mobilephones/static/media/mobiletwolieve.1c45afe5af0b5a86e99fc84ca4c7d8f1.svg",
+    "static/media/mobilethirteen.svg": "/Mobilephones/static/media/mobilethirteen.c103e47415b31db439f8089525e3393c.svg",
+    "static/media/mobileten.svg": "/Mobilephones/static/media/mobileten.2085cecb87b338774aa5d0150f9cb8b3.svg",
+    "static/media/mobileseventeen.svg": "/Mobilephones/static/media/mobileseventeen.395069cfe7327ecacf2be3c9a3651af2.svg",
+    "static/media/mobilesixteen.svg": "/Mobilephones/static/media/mobilesixteen.5fcccd0e1ceae6342f29b3a4e7026984.svg",
+    "static/media/mobileone.svg": "/Mobilephones/static/media/mobileone.3eb5e635429daf7c81e15f5a5b6cf0fc.svg",
+    "static/media/heroimg.svg": "/Mobilephones/static/media/heroimg.d2cd5e1b03f3a2b88e2bf98749961f44.svg",
+    "static/media/mobileeight.svg": "/Mobilephones/static/media/mobileeight.5d32861323c4a9a37bbf1cd3810f0dcf.svg",
+    "static/media/mobilethree.svg": "/Mobilephones/static/media/mobilethree.3bc5929c1329c4db61f34437d13782ac.svg",
+    "static/media/getiton.svg": "/Mobilephones/static/media/getiton.e28b008ac3406714351395caa2a0e075.svg",
+    "static/media/MyPhone.svg": "/Mobilephones/static/media/MyPhone.afc30708310612ddde914884a7d409ff.svg",
+    "static/media/footer.svg": "/Mobilephones/static/media/footer.472e501806257154981f0f07edd1a8c5.svg",
+    "static/media/pepicons.svg": "/Mobilephones/static/media/pepicons.52de88acbc7011c86f862b12b653ff1d.svg",
+    "static/media/dots.svg": "/Mobilephones/static/media/dots.0eeb50386a0915661b4721b165ccf871.svg",
+    "index.html": "/Mobilephones/index.html",
+    "static/media/SearchBar.svg": "/Mobilephones/static/media/SearchBar.7ac94ffd21f2058b1d1c83e41c24eba7.svg",
+    "static/media/three.svg": "/Mobilephones/static/media/three.6d473e74c501cdca064f17e2a6408bbb.svg",
+    "static/media/heart.svg": "/Mobilephones/static/media/heart.c0630d300e96dd3a020e3cd9eeb58460.svg",
+    "static/media/rightarrow.svg": "/Mobilephones/static/media/rightarrow.9209023be9e28455536a1fd95eb76e00.svg",
+    "static/media/verysmallgol.svg": "/Mobilephones/static/media/verysmallgol.cbaafceb7e5c14b05f5e353bad915a5b.svg",
+    "static/media/smallgol.svg": "/Mobilephones/static/media/smallgol.756cef539dd78130da12765b25ab661b.svg",
+    "static/media/largegol.svg": "/Mobilephones/static/media/largegol.606ce6436937be526675465b6934dbdb.svg",
+    "main.33ea5521.css.map": "/Mobilephones/static/css/main.33ea5521.css.map",
+    "main.b029ba8b.js.map": "/Mobilephones/static/js/main.b029ba8b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33ea5521.css",
+    "static/js/main.b029ba8b.js"
+  ]
+}
