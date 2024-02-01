@@ -15,8 +15,13 @@ import dots from "../../assects/dots.svg";
 import rightarrow from "../../assects/rightarrow.svg";
 import largegol from "../../assects/largegol.svg";
 import verysmallgol from "../../assects/verysmallgol.svg";
+import cardimg from "../../assects/cardimg.svg";
+import cardimgtwo from "../../assects/cardimgtwo.svg";
+import footer from "../../assects/footer.svg";
+import getiton from "../../assects/getiton.svg";
 
 // Import Swiper styles
+
 import "swiper/css";
 
 import { Autoplay } from "swiper/modules";
@@ -365,21 +370,109 @@ const HomeSection = () => {
           <br />
           <div className="col-md-4">
             <div className="ms-5">
-
-            <img
-              className="img-fluid"
-              width={200}
-              src={mobileseventeen}
-              alt=""
-            />
-            <p className="fs-5 mt-3">POCO X4 PRO - 128 GB 
-            <p className="ms-5 ps-5" ><span className="ms-4 later fw-bold">RS 47,999</span></p></p>
-
-              </div>
+              <img
+                className="img-fluid"
+                width={200}
+                src={mobileseventeen}
+                alt=""
+              />
+              <p className="fs-5 mt-3">
+                POCO X4 PRO - 128 GB
+                <p className="ms-5 ps-5">
+                  <span className="ms-4 later fw-bold">RS 47,999</span>
+                </p>
+              </p>
+            </div>
           </div>
         </div>
       </div>
+
+      <div className="container my-5">
+        <div className="row text-center">
+          <div className="col-md-4">
+            <div className="card p-2 py-4">
+              <p>
+                Fantastic Selection and Prices!I recently purchased a new phone
+                from this website, and I couldn't be happier with my experience.
+              </p>
+              <div className="text-center">
+                <img src={cardimg} width={50} alt="" />
+              </div>
+              <p className="text-center txt-color mt-4">Duaa Zahra</p>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card p-2 py-4">
+              <p>
+                “I had been dreading the process of buying a new phone, but this
+                website made it incredibly easy and stress-free.”
+              </p>
+              <div className="text-center">
+                <img src={cardimgtwo} width={50} alt="" />
+              </div>
+              <p className="text-center txt-color mt-4">Hassan Raza</p>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card py-4 p-2">
+              <p>
+                Fantastic Selection and Prices!I recently purchased a new phone
+                from this website, and I couldn't be happier with my experience.
+              </p>
+              <div className="text-center">
+                <img src={cardimgtwo} width={50} alt="" />
+              </div>
+              <p className="text-center txt-color mt-4">Hassan Raza</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<div className="nav-background-color">
+
+      <div className="container mt-5">
+        <div className="row">
+          <div className="col-md-1">
+
+          </div>
+          <div className="col-md-3 py-3">
+            <div className="ms-5 text-white">
+              
+<img src={footer} alt="" />
+<div className="mt-3">
+
+            <p >About Us</p>
+            <p>FAQs</p>
+            <p>Contact Us</p>
+            <p>Careers</p>
+            <p>Press & Blog</p>
+            <p>Terms & Condition</p>
+</div>
+            </div>
+          </div>
+          <div className="col-md-4 py-3">
+            <div className="ms-5 text-white">
+
+<h5 >Customer Service</h5>
+            <p>Help Center</p>
+            <p>Privacy Policy</p>
+            <p>Installments Plan</p>
+            <p>E-Warranty Activation</p>
+            </div>
+          </div>
+          <div className="col-md-3 py-3">
+<h5 className="text-white">Secure Payments Methods</h5>
+          <div className="mt-5">
+            <img src={getiton} alt="" />
+          </div>
+          </div>
+          <div className="col-md-1">
+
+          </div>
+      
+        </div>
+      </div>
     </div>
+</div>
   );
 };
 
